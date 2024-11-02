@@ -25,7 +25,7 @@ Esta es una aplicación simple de lista de tareas construida con React y Express
 1. **Clonar el repositorio**
 
    ```
-   git clone <url-del-repositorio>
+   git clone https://github.com/lewisdls/to-do-list
    cd todo-list-app
    ```
 
