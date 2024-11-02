@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import axios from "axios";
 import { FaRegEdit } from "react-icons/fa";
 import { FaRegTrashAlt } from "react-icons/fa";
@@ -9,10 +9,6 @@ const API_URL = "http://localhost:8080/tasks";
 const Task = ({ id, title, description, isChecked }) => {
   const [isMarked, setIsMarked] = useState(isChecked);
   const [isFormOpen, setIsFormOpen] = useState(false);
-
-  useEffect(() => {
-    setIsMarked(isChecked);
-  }, []);
 
   const handleCheckbox = () => {
     setIsMarked(!isMarked);
