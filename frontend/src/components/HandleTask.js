@@ -47,7 +47,7 @@ const HandleTask = ({
             </label>
             <input
               type="text"
-              value={title}
+              value={title || ""}
               onChange={(e) => setTitle(e.target.value)}
               placeholder="Ingrese un título"
               name="title"
@@ -67,7 +67,7 @@ const HandleTask = ({
             </label>
             <textarea
               placeholder="Ingrese una descripción"
-              value={description}
+              value={description || ""}
               onChange={(e) => setDescription(e.target.value)}
               name="description"
               className="text-sm p-3 rounded-md bg-[#f3f6f6]"
